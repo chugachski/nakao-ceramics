@@ -1,0 +1,7 @@
+volumes/db/*
+!volumes/db/.empty
+
+volumes/uploads/*
+!volumes/uploads/.empty
+
+.DS_Store
