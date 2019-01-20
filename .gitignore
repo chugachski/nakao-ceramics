@@ -5,3 +5,7 @@ volumes/uploads/*
 !volumes/uploads/.empty
 
 .DS_Store
+
+app/plugins/**
+
+app/vendor/**

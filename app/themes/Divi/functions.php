@@ -8749,7 +8749,7 @@ add_action( 'et_before_content', 'et_do_video_embed_html' );
  */
 function et_delete_post_gallery( $content ) {
     $deleted = false;
-    
+
 	if ( ( is_single() || is_archive() ) && is_main_query() && has_post_format( 'gallery' ) ) :
 		$regex = get_shortcode_regex();
 		preg_match_all( "/{$regex}/s", $content, $matches );
@@ -9660,7 +9660,7 @@ if ( ! function_exists( 'et_divi_footer_active_sidebars' ) ):
 					break;
 			}
 		}
-		
+
 		return $et_active_sidebar;
 	}
 endif;
