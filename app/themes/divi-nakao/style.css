@@ -12,7 +12,142 @@
 /* =Theme customization starts here
 ------------------------------------------------------- */
 
+/**************
 /* Home page */
-.home-hero h1 {
-  padding-bottom: 30px;
+/*************/
+.home #home-hero h1 {
+  padding-bottom: 20px;
+}
+
+.home #home-hero .header-content {
+  margin: 35px auto;
+}
+
+/*******************
+/* Events Listing */
+/******************/
+.events-archive #main-content .container:before {
+  background: none;
+}
+
+@media (min-width: 981px){
+  .events-archive #left-area {
+    width: 100%;
+    padding: 23px 0px 0px !important;
+    float: none !important;
+  }
+}
+
+.events-archive #tribe-events-bar {
+  display: none;
+}
+
+.events-archive .tribe-events-button {
+  display: none;
+}
+
+/***********
+/* Footer */
+/**********/
+footer#main-footer {
+  background-color: #1F1F1F;
+  padding: 40px 35px;
+}
+
+.footer-content {
+  display: flex;
+}
+
+/* mobile */
+@media only screen
+and (max-device-width : 480px) {
+  footer#main-footer .footer-left,
+  footer#main-footer .footer-right {
+    display: block;
+    width: 100%;
+  }
+}
+
+footer#main-footer .footer-left {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer#main-footer .footer-right {
+  display: flex;
+  flex: 1;
+  max-width: 325px;
+}
+
+footer#main-footer .footer-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-contact li:last-child {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.footer-contact,
+.footer-social {
+  display: block;
+}
+
+.footer-contact {
+  margin-right: 30px;
+}
+
+#footer-bottom {
+  background-color: #1F1F1F;
+  padding: 0;
+}
+
+.et-social-icon .social-path {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.et-social-icons {
+  float: none;
+}
+
+.et-social-icons li {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.et-social-icons a {
+  display: flex;
+  align-items: center;
+}
+
+/* Etsy custom social icon */
+/* https://stackoverflow.com/questions/19108112/show-image-over-another-image-on-hover */
+.et-social-etsy {
+  vertical-align: bottom;
+}
+
+.etsy-container {
+  position: relative;
+  float: left;
+}
+
+.etsy-container .image-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.etsy-container:hover .image-hover {
+  display: block;
+  opacity: 0.7;
+}
+
+.et-social-etsy img {
+  width: 22px;
 }
