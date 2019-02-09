@@ -1,0 +1,31 @@
+{
+  "name": "nakao/nakao-ceramics",
+  "description": "Nakao Ceramics website, accessible at https://nakaoceramics.com/",
+  "type": "project",
+  "homepage": "https://github.com/chugachski/nakao-ceramics",
+  "license": "proprietary",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.6",
+    "yoast/wordpress-seo": "^9.4",
+    "wpackagist-plugin/redirection": "^3.5",
+    "wpackagist-plugin/the-events-calendar": "4.7.3"
+  },
+  "extra": {
+    "installer-paths": {
+      "plugins/{$name}/": [
+        "type:wordpress-plugin",
+        "wpackagist-plugin/redirection"
+      ],
+      "mu-plugins/{$name}/": ["type:wordpress-muplugin"]
+    }
+  },
+  "config": {
+    "secure-http": false
+  }
+}
