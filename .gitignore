@@ -1,11 +1,16 @@
-volumes/db/*
+volumes/db/
 !volumes/db/.empty
 
-volumes/uploads/*
+volumes/uploads/
 !volumes/uploads/.empty
 
+app/plugins/
+
+app/vendor/
+
+app/themes/
+!app/themes/Divi
+!app/themes/divi-nakao
+!app/themes/index.php
+
 .DS_Store
-
-app/plugins/**
-
-app/vendor/**

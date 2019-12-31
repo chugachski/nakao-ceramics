@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   db:
@@ -7,7 +7,7 @@ services:
       - ./volumes/db:/var/lib/mysql
     restart: always
     ports:
-      - "3306:3307"
+      - "6455:3306"
     environment:
       MYSQL_ROOT_PASSWORD: wordpress
       MYSQL_DATABASE: wordpress
@@ -15,14 +15,14 @@ services:
   wordpress:
     depends_on:
       - db
-    image: conetix/wordpress-with-wp-cli
+    image: wordpress
     working_dir: /var/www/html
     volumes:
       - ./app:/var/www/html/wp-content
       - ./volumes/uploads:/var/www/html/wp-content/uploads
       - ./scripts:/opt/scripts
     ports:
-      - "8080:80"
+      - "6456:80"
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
