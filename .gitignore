@@ -8,9 +8,10 @@ app/plugins/
 
 app/vendor/
 
-app/themes/
+app/themes/*
+!app/themes
+!app/themes/index.php
 !app/themes/Divi
 !app/themes/divi-nakao
-!app/themes/index.php
 
 .DS_Store
